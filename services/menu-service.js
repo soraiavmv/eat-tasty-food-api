@@ -1,7 +1,8 @@
 import { MongoClient } from 'mongodb';
+import config from '../config/dev-config.json';
 
-const mongoClient = new MongoClient('mongodb://localhost:27017');
-const DB_NAME = 'eat-tasty-food';
+const mongoClient = new MongoClient(config.uri);
+const DB_NAME = config.db;
 
 const connect = async () => {
     return await mongoClient.connect();
