@@ -56,3 +56,16 @@ export const getMenuCategoryItems = async (category) => {
         console.log(e);
     }
 }
+
+export const getMenuCategories = async () => {
+    try {
+        connect();
+        const data = await mongoClient.db(DB_NAME)
+            .collection('menu')
+            .distinct('category');
+        disconnect();
+        return data;
+    } catch (e) {
+        console.log(e);
+    }
+}
