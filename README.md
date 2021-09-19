@@ -2,8 +2,7 @@
 
 A simple REST API that provides data for an Azorean Food related menu.
 
-This API has predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes.
-
+This API has predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes and verbs(currently supports GET, will support POST requests in the future).
 # Technologies
 
 This API was created using Node.js, Express.js, and MongoDB.
