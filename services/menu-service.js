@@ -50,6 +50,7 @@ export const getMenuCategoryItems = async (category) => {
                 category
             })
             .toArray();
+
         disconnect();
         return data;
     } catch (e) {
