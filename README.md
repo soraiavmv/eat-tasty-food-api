@@ -4,6 +4,10 @@ A simple REST API that provides data for an Azorean Food related menu.
 
 This API has predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes.
 
+# Technologies
+
+This API was created using Node.js, Express.js, and MongoDB.
+
 ## Installation
 
 Use the package manager [npm](https://www.npmjs.com/) to install EatTastyFood API.
